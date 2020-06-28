@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="njd-pC-mBb">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CSE438S_Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-bd-JaS">
+                                <rect key="frame" x="0.0" y="762" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CYs-hp-jpJ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem image="circle.fill" catalog="system" id="YxF-nu-vxY">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="GIz-yo-iMw">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="blackSelected:" destination="BYZ-38-t0r" id="mpd-Bw-ssk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="wFQ-TV-dZ4">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="redSelected:" destination="BYZ-38-t0r" id="c6Y-3Q-YPV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="KAh-td-kjb">
+                                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="orangeSelected:" destination="BYZ-38-t0r" id="Zfg-du-z7E"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="hCb-xZ-fQy">
+                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="yellowSelected:" destination="BYZ-38-t0r" id="vDS-X0-2h7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="zfT-lB-HEK">
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="greenSelected:" destination="BYZ-38-t0r" id="oNE-Tc-fGt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="nYh-4l-Ntj">
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="blueSelected:" destination="BYZ-38-t0r" id="n5a-hW-Caj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="e6p-3j-VzR">
+                                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="indigoSelected:" destination="BYZ-38-t0r" id="RVP-OV-l24"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="4bI-Bf-aR8">
+                                        <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="purpleSelected:" destination="BYZ-38-t0r" id="qdE-sh-N7H"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="OQC-99-0MM">
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="lightGreySelected:" destination="BYZ-38-t0r" id="Vh9-by-J66"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="circle.fill" catalog="system" id="ogb-l0-ETX">
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="darkGreySelected:" destination="BYZ-38-t0r" id="zeA-28-tMv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zdh-bd-JaS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1od-Be-sHG"/>
+                            <constraint firstAttribute="bottom" secondItem="zdh-bd-JaS" secondAttribute="bottom" id="Tg3-vL-J1e"/>
+                            <constraint firstItem="zdh-bd-JaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="htu-wy-qih"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BZi-Ae-0wL">
+                        <nil key="title"/>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Brush" id="3CU-I6-LA3">
+                                <connections>
+                                    <action selector="brushSwitch:" destination="BYZ-38-t0r" id="8Bx-QT-ZFe"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Circle" id="XJX-nU-e6Z">
+                                <connections>
+                                    <action selector="shapeSwitch:" destination="BYZ-38-t0r" id="7Wb-5T-uGd"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <slider key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Hdp-rp-eSP">
+                            <rect key="frame" x="124.66666666666667" y="5" width="135.33333333333331" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="weightChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AyB-95-I2j"/>
+                            </connections>
+                        </slider>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Clear" id="y1K-1m-NSN">
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" id="EaY-bS-YSi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Undo" id="z1t-mm-Fw5">
+                                <connections>
+                                    <action selector="undo:" destination="BYZ-38-t0r" id="gW2-KJ-01r"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="brushBut" destination="3CU-I6-LA3" id="eDn-E2-Kb3"/>
+                        <outlet property="canvasView" destination="8bC-Xf-vdC" id="oJp-yj-qli"/>
+                        <outlet property="colorBoard" destination="zdh-bd-JaS" id="tzD-8a-74A"/>
+                        <outlet property="shapeBut" destination="XJX-nU-e6Z" id="a4n-px-Dsa"/>
+                        <outlet property="weightSlider" destination="Hdp-rp-eSP" id="SMZ-hd-tds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ui8-4K-MLx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="njd-pC-mBb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fd9-vm-Dbh">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aQb-5z-ESB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9us-b1-VZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
